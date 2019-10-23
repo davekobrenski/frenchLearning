@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">frenchLearning</string>
+    <string name="title_activity_main">frenchLearning</string>
+    <string name="package_name">com.dkobrenski.frenchVideos</string>
+    <string name="fileprovider_authority">com.dkobrenski.frenchVideos.fileprovider</string>
+    <string name="custom_url_scheme">com.dkobrenski.frenchVideos</string>
+</resources>
