@@ -1,0 +1,7 @@
+{
+  "name": "frenchLearning",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
