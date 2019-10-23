@@ -1,8 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">frenchLearning</string>
-    <string name="title_activity_main">frenchLearning</string>
-    <string name="package_name">com.dkobrenski.frenchVideos</string>
-    <string name="fileprovider_authority">com.dkobrenski.frenchVideos.fileprovider</string>
-    <string name="custom_url_scheme">com.dkobrenski.frenchVideos</string>
+  <string name="app_name">frenchLearning</string>
+  <string name="title_activity_main">frenchLearning</string>
+  <string name="package_name">com.dkobrenski.frenchVideos</string>
+  <string name="fileprovider_authority">com.dkobrenski.frenchVideos.fileprovider</string>
+  <string name="custom_url_scheme">com.dkobrenski.frenchVideos</string>
+  <string name="ionic_app_id">85802c03</string>
+  <string name="ionic_channel_name">Master</string>
+  <string name="ionic_update_method">background</string>
+  <string name="ionic_max_versions">2</string>
+  <string name="ionic_min_background_duration">30</string>
+  <string name="ionic_update_api">https://api.ionicjs.com</string>
 </resources>

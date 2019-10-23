@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
 
 const routes: Routes = [
   {
@@ -9,18 +12,25 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-  {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    children: [
+      {
+        path: '',
+        loadChildren: './home/home.module#HomePageModule'
+      },
+      {
+        path: ':id',
+        component: VideoDetailComponent
+      }
+    ]
   }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    CommonModule, IonicModule
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: [VideoDetailComponent]
 })
 export class AppRoutingModule {}
